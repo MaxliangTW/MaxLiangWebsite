@@ -1,0 +1,25 @@
+.Navbar{
+    width: 100vw;
+    height: 15vh;
+    background-color: rgb(34, 104, 81);
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    .Logo{
+        flex: none;
+        margin-left: 5vw; 
+    }
+    .nav{
+        display: flex;
+        margin-right: 2vw;
+        .About{
+            color: white;
+            font-size: larger;
+            margin-right: 10px;
+        }
+        .Contact{
+            color: white;
+            font-size: larger;
+        }
+    }
+}
