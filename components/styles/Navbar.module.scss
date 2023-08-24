@@ -1,25 +1,36 @@
 .Navbar{
     width: 100vw;
     height: 15vh;
-    background-color: rgb(58, 69, 65);
+    //background-color: rgb(58, 69, 65);
     display: flex;
-    justify-content: space-between; 
+    justify-content: center; 
     align-items: center;
-    .Logo{
-        flex: none;
-        margin-left: 5vw; 
-    }
-    .nav{
+    .navigation{
         display: flex;
         margin-right: 2vw;
-        .About{
-            color: white;
+        .logo{
+            color: rgb(235, 233, 233);
             font-size: larger;
-            margin-right: 10px;
+            font-weight: bolder;
+            cursor: pointer;
+            margin-right: 2.5vw; 
         }
-        .Contact{
+        .about{
             color: white;
             font-size: larger;
+            cursor: pointer;
+            margin-right: 2.5vw;
+        }
+        .resume{
+            color: white;
+            font-size: larger;
+            cursor: pointer;
+            margin-right: 2.5vw;
+        }
+        .protflio{
+            color: white;
+            font-size: larger;
+            cursor: pointer;
         }
     }
 }

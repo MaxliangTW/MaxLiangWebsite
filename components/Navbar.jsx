@@ -4,19 +4,14 @@ import Image from 'next/image'
 
 const Navbar = () => {
   return (
-    <div className={style.Navbar}>
-      <Image
-        className={style.Logo}
-        src="/image/CanChu.png" 
-        alt="JiuTan Logo"
-        width={113}
-        height={24}
-        />
-      <div className={style.nav}>
-        <p className={style.About}>About</p>
-        <p className={style.Contact}>聯絡我們</p>
-      </div>
-    </div>
+    <header className={style.Navbar}>
+      <nav className={style.navigation}>
+        <p className={style.logo}>MaxLiang</p>
+        <p href='#' className={style.about}>About</p>
+        <p href='#' className={style.resume}>Resume</p>
+        <p href='#' className={style.protflio}>Protflio</p>
+      </nav>
+    </header>
   )
 }
 
