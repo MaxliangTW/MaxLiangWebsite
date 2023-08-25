@@ -1,36 +1,44 @@
-.Navbar{
+.Navbar {
     width: 100vw;
-    height: 15vh;
-    //background-color: rgb(58, 69, 65);
+    height: 10vh;
+    background-color: rgba(0, 0, 0, 0.5);
     display: flex;
-    justify-content: center; 
+    justify-content: space-between;
     align-items: center;
-    .navigation{
-        display: flex;
-        margin-right: 2vw;
-        .logo{
-            color: rgb(235, 233, 233);
-            font-size: larger;
-            font-weight: bolder;
-            cursor: pointer;
-            margin-right: 2.5vw; 
-        }
-        .about{
-            color: white;
-            font-size: larger;
-            cursor: pointer;
-            margin-right: 2.5vw;
-        }
-        .resume{
-            color: white;
-            font-size: larger;
-            cursor: pointer;
-            margin-right: 2.5vw;
-        }
-        .protflio{
-            color: white;
-            font-size: larger;
-            cursor: pointer;
-        }
+    .logo {
+      cursor: pointer;
+      margin-left: 2.5vw;
     }
-}
+    .navigation {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .about, .resume, .protflio {
+        color: white;
+        font-size: larger;
+        cursor: pointer;
+        margin-right: 2.5vw;
+        text-decoration: none;
+        position: relative;
+        &::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: -6px;
+          width: 100%;
+          height: 3px;
+          background: #fff;
+          border-radius: 5px;
+          transform: scaleX(0);
+          transition: transform 0.4s;
+          transform-origin: left;
+        }
+        &:hover {
+          &::after {
+            transform: scaleX(1);
+          }
+        }
+      }
+    }
+  }
+  
