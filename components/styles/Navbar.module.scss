@@ -1,10 +1,11 @@
 .Navbar {
     width: 100vw;
-    height: 10vh;
-    background-color: rgba(0, 0, 0, 0.5);
+    height: 8vh;
+    background-color: rgba(26, 25, 25, 0.402);
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index:99;
     .logo {
       cursor: pointer;
       margin-left: 2.5vw;
@@ -40,5 +41,8 @@
         }
       }
     }
+    position: fixed;
+    top: 0;
+    left: 0;
   }
   
