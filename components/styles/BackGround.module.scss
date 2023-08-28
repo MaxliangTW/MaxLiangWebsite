@@ -1,7 +1,4 @@
-.Background {
-    position: absolute;
-    top: 0;
-    left: 0;
+.BackGroundImg {
     width: 100vw;
     height: 600px;
     background: url('../../public/background.jpg') no-repeat center center fixed;
@@ -10,8 +7,8 @@
     align-items: center;
     justify-content: center;
     .wrapper {
-        background-color: rgba(5, 5, 5, 0.635);
-        width: 60%;
+        background-color: rgba(5, 5, 5, 0.594);
+        width: 55%;
         height: 40%;
         margin: 0 auto;
         // border: 2px solid rgba(255, 255, 255, 2);
@@ -19,11 +16,16 @@
         padding: 2vw;
         text-align: center;
         color: rgb(255, 255, 255);
-        @media (max-width: 650px) {
+        @media (max-width: 700px) {
             width: 80%;
             height: 50%;
           }
       }
-    .otherlink{
-    }
-  }
+}
+.About{
+  background-color: rgb(253, 253, 253);
+  width: 100vw;
+  height: 500px;
+  display: flex;
+  align-items: center;
+}

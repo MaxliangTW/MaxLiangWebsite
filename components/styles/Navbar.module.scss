@@ -1,13 +1,13 @@
 .Navbar {
     width: 100vw;
-    height: 8vh;
-    background-color: rgba(26, 25, 25, 0.402);
+    height: 7vh;
+    background-color: rgba(26, 25, 25, 0.228);
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index:99;
     .logo {
-      cursor: pointer;
+      // cursor: pointer;
       margin-left: 2.5vw;
     }
     .navigation {
@@ -18,7 +18,7 @@
         color: white;
         font-size: larger;
         cursor: pointer;
-        margin-right: 2.5vw;
+        margin-right: 3vw;
         text-decoration: none;
         position: relative;
         &::after {
