@@ -9,7 +9,7 @@ const BackGround = () => {
     <div>
       <section className={style.BackGroundImg}>
         <div class={style.wrapper}>
-          <h2>Hi, I'm Max Liang</h2>
+          <h2>Hi, I&apos;m Max Liang</h2>
           <h3>A Junior Front-end developer from Taiwan</h3>
           <p>I embrace a passion for making a world-changing impact.</p>
           <p>In pursuit of this goal,</p>
