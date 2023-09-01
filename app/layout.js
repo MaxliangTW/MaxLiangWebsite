@@ -4,8 +4,8 @@ import './globals.css';
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'JiuTan',
-  description: '讓運動變得更有效率的線上社群',
+  title: 'Max Liang',
+  description: 'Max Liang 的個人網站',
 }
 
 export default function RootLayout({ children }) {
