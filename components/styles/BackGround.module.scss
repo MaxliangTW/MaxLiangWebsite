@@ -9,15 +9,24 @@
     .wrapper {
         background-color: rgba(5, 5, 5, 0.594);
         width: 55%;
-        height: 40%;
+        height: 45%;
         margin: 0 auto;
         border-radius: 20px;
         padding: 2vw;
         text-align: center;
         color: rgb(255, 255, 255);
-        @media (max-width: 700px) {
+        .OtherLink{
+           .linkedln, .Github{
+            margin-right: 2vw;
+           }
+          }
+        @media (max-width: 720px) {
             width: 80%;
             height: 50%;
+          }
+          @media (max-width: 485px) {
+            width: 90%;
+            height: 70%;
           }
       }
 }
@@ -59,5 +68,17 @@
         text-align: center;
       }
     }
+  }
+}
+.Resume{
+  width: 100vw;
+  min-height: auto;
+  background-color: rgb(43, 41, 41);
+  .Master{
+    color: whitesmoke;
+
+  }
+  .Bachelor{
+    color: whitesmoke;
   }
 }

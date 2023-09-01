@@ -3,20 +3,41 @@
 import React from 'react'
 import style from './styles/BackGround.module.scss'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const BackGround = () => {
   return (
     <div>
-      <section className={style.BackGroundImg}>
-        <div class={style.wrapper}>
+      <article className={style.BackGroundImg}>
+        <section class={style.wrapper}>
           <h2>Hi, I&apos;m Max Liang </h2>
           <h3>A Junior Front-end developer from Taiwan</h3>
           <p>I embrace a passion for making a world-changing impact.</p>
           <p>In pursuit of this goal,</p>
           <p>I am honing my skills in areas such as Front-end development, UIUX, Product Management and more</p>
-        </div>
-      </section>
-      <section id='About' className={style.About}>
+          <div className={style.OtherLink}>
+          <Link href="https://www.linkedin.com/in/shengchiehliang">
+              <Image
+                className={style.linkedln}
+                width={30}
+                height={30}
+                src="/linkedln.png"
+                alt='linkedln Logo'
+              />
+          </Link>
+          <Link href="https://github.com/MaxliangTW">
+              <Image
+                className={style.Github}
+                width={30}
+                height={30}
+                src="/github.png"
+                alt='Github Logo'
+              />
+          </Link>
+          </div>
+        </section>
+      </article>
+      <article id='About' className={style.About}>
         <div className={style.MyPhoto}>
           <Image
           className={style.MaxLinagPhoto}
@@ -45,7 +66,32 @@ const BackGround = () => {
             </ul>
           </div>
         </div>
-      </section>
+      </article>
+      <article id='Resume' className={style.Resume}>
+        <h1>EDUCATION</h1>
+        <section className={style.Master}>
+          <div className={style.MasterPhoto}>
+            <Link href="https://www.ntnu.edu.tw/">
+              <Image
+                width={80}
+                height={80}
+                src="/NTNU.png"
+                alt='NTNU Logo'
+              />
+            </Link>
+          </div>
+          <div className={style.MasterDoc}>
+            <h3>國立臺灣師範大學 圖書資訊學研究所</h3>
+          </div>
+        </section>
+        <section className={style.Bachelor}>
+          <div className={style.BachelorPhoto}>
+          </div>
+          <div className={style.BachelorDoc}>
+            <h3>淡江大學 資訊與圖書館學系</h3>
+          </div>
+        </section>
+      </article>
     </div>
   )
 }
