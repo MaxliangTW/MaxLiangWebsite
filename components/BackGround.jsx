@@ -68,7 +68,7 @@ const BackGround = () => {
         </div>
       </article>
       <article id='Resume' className={style.Resume}>
-        <h1>EDUCATION</h1>
+        
         <section className={style.Master}>
           <div className={style.MasterPhoto}>
             <Link href="https://www.ntnu.edu.tw/">
@@ -86,6 +86,14 @@ const BackGround = () => {
         </section>
         <section className={style.Bachelor}>
           <div className={style.BachelorPhoto}>
+            <Link href="https://www.tku.edu.tw/">
+              <Image
+                width={80}
+                height={80}
+                src="/TKU.png"
+                alt='TKU Logo'
+              />
+            </Link>
           </div>
           <div className={style.BachelorDoc}>
             <h3>淡江大學 資訊與圖書館學系</h3>
