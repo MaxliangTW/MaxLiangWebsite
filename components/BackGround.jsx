@@ -67,35 +67,46 @@ const BackGround = () => {
           </div>
         </div>
       </article>
-      <article id='Resume' className={style.Resume}>     
-        <section className={style.Master}>
-          <div className={style.MasterPhoto}>
-            <Link href="https://www.ntnu.edu.tw/">
-              <Image
-                width={80}
-                height={80}
-                src="/NTNU.png"
-                alt='NTNU Logo'
-              />
-            </Link>
+      <article id='Resume' className={style.Resume}> 
+        <section className={style.EDUCATION}>
+          <div className={style.EDUCATIONtext}>
+            <h1>EDUCATION</h1>
           </div>
-          <div className={style.MasterDoc}>
-            <h3>國立臺灣師範大學 圖書資訊學研究所</h3>
-          </div>
-        </section>
-        <section className={style.Bachelor}>
-          <div className={style.BachelorPhoto}>
-            <Link href="https://www.tku.edu.tw/">
-              <Image
-                width={80}
-                height={80}
-                src="/TKU.png"
-                alt='TKU Logo'
-              />
-            </Link>
-          </div>
-          <div className={style.BachelorDoc}>
-            <h3>淡江大學 資訊與圖書館學系</h3>
+          <div className={style.Degree}>
+            <section className={style.Master}>
+              <div className={style.MasterPhoto}>
+                <Link href="https://www.ntnu.edu.tw/">
+                  <Image
+                    width={80}
+                    height={80}
+                    src="/NTNU.png"
+                    alt='NTNU Logo'
+                  />
+                </Link>
+              </div>
+              <div className={style.MasterDoc}>
+                <h2>Master&apos;s degree, library and information science</h2>
+                <p>國立臺灣師範大學 National Taiwan Normal University</p>
+                <p>2021.08 ~ Present</p>
+              </div>
+            </section>
+            <section className={style.Bachelor}>
+              <div className={style.BachelorPhoto}>
+                <Link href="https://www.tku.edu.tw/">
+                  <Image
+                    width={80}
+                    height={80}
+                    src="/TKU.png"
+                    alt='TKU Logo'
+                  />
+                </Link>
+              </div>
+              <div className={style.BachelorDoc}>
+                <h2>Bachelor&apos;s degree, Information and Library Science</h2>
+                <p>淡江大學 Tamkang University</p>
+                <p>2017.08 ~ 2021.06</p>
+              </div>
+            </section>
           </div>
         </section>
       </article>

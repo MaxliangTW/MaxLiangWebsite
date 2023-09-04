@@ -70,18 +70,40 @@
     }
   }
 }
-.Resume{
+.Resume {
   width: 100vw;
-  min-height: auto;
+  min-height: 1000px;
   background-color: rgb(43, 41, 41);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  .Master{
-    color: whitesmoke;
-
-  }
-  .Bachelor{
-    color: whitesmoke;
+  .EDUCATION{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:5vw 0;
+    border-bottom: 1px solid rgba(240, 238, 238, 0.89);
+    .EDUCATIONtext{
+      color: whitesmoke;
+      margin-right: 5vw;
+    }
+    .Degree{
+      .Master, .Bachelor {
+        display: flex; 
+        .MasterPhoto, .BachelorPhoto {
+          width: 80px;
+          height: 80px;
+          margin-right: 2vw;
+        }
+        .MasterDoc, .BachelorDoc {
+          text-align: left;
+          color: whitesmoke;
+          h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+          }
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+    }
   }
 }
