@@ -67,8 +67,7 @@ const BackGround = () => {
           </div>
         </div>
       </article>
-      <article id='Resume' className={style.Resume}>
-        
+      <article id='Resume' className={style.Resume}>     
         <section className={style.Master}>
           <div className={style.MasterPhoto}>
             <Link href="https://www.ntnu.edu.tw/">
