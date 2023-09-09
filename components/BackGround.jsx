@@ -4,6 +4,7 @@ import React from 'react'
 import style from './styles/BackGround.module.scss'
 import Image from 'next/image'
 import Link from 'next/link'
+import { SassColor } from 'sass'
 
 const BackGround = () => {
   return (
@@ -73,7 +74,7 @@ const BackGround = () => {
             <h1>EDUCATION</h1>
           </div>
           <div className={style.Degree}>
-            <section className={style.Master}>
+            <div className={style.Master}>
               <div className={style.MasterPhoto}>
                 <Link href="https://www.ntnu.edu.tw/">
                   <Image
@@ -89,8 +90,8 @@ const BackGround = () => {
                 <p>國立臺灣師範大學 National Taiwan Normal University</p>
                 <p>2021.08 ~ Present</p>
               </div>
-            </section>
-            <section className={style.Bachelor}>
+            </div>
+            <div className={style.Bachelor}>
               <div className={style.BachelorPhoto}>
                 <Link href="https://www.tku.edu.tw/">
                   <Image
@@ -106,8 +107,31 @@ const BackGround = () => {
                 <p>淡江大學 Tamkang University</p>
                 <p>2017.08 ~ 2021.06</p>
               </div>
-            </section>
+            </div>
           </div>
+        </section>
+        <section className={style.Experience}>
+            <div className={style.EXPERINCEtext}>
+              <h1>EXPERINCE</h1>
+            </div>
+            <div className={style.AppWorksSchool}>
+              <div className={style.AppWorksSchoolPhoto}>
+                <Link href="https://www.ntnu.edu.tw/">
+                  <Image
+                    width={80}
+                    height={80}
+                    src="/NTNU.png"
+                    alt='NTNU Logo'
+                  />
+                </Link>
+              </div>
+              <div className={style.AppWorksSchoolDoc}>
+                <h2>Frontend Trianee</h2>
+                <p>2023.06 ~ 2023.08</p>
+                <b>Next.js, React.js, SCSS, Git</b>
+                <p>Campus Program Summer / Front-End Class</p>
+              </div>
+            </div>
         </section>
       </article>
     </div>

@@ -7,7 +7,7 @@
     align-items: center;
     justify-content: center;
     .wrapper {
-        background-color: rgba(5, 5, 5, 0.594);
+        background-color: rgba(5, 5, 5, 0.605);
         width: 55%;
         height: 45%;
         margin: 0 auto;
@@ -26,7 +26,7 @@
           }
           @media (max-width: 485px) {
             width: 90%;
-            height: 70%;
+            height: 60%;
           }
       }
 }
@@ -39,7 +39,7 @@
   justify-content: center;
   @media (max-width: 650px) {
     flex-direction: column;
-    padding: 20px;
+    padding-top: 20px;
   }
   .MyPhoto{
     margin: 0 50px;
@@ -64,8 +64,9 @@
       font-weight: 300;
       font-size: 15px;
       @media (max-width: 650px) {
+        flex-direction: column;
         width: 100%;
-        text-align: center;
+        text-align: left;
       }
     }
   }
@@ -80,6 +81,10 @@
     align-items: center;
     padding:5vw 0;
     border-bottom: 1px solid rgba(240, 238, 238, 0.89);
+    @media (max-width: 900px) {
+      flex-direction: column;
+      padding-top: 20px;
+    }
     .EDUCATIONtext{
       color: whitesmoke;
       margin-right: 5vw;
@@ -87,10 +92,17 @@
     .Degree{
       .Master, .Bachelor {
         display: flex; 
+        @media (max-width: 650px) {
+          flex-direction: column;
+          padding-top: 20px;
+        }
         .MasterPhoto, .BachelorPhoto {
           width: 80px;
           height: 80px;
           margin-right: 2vw;
+          @media (max-width: 650px) {
+            padding-left: 20px;
+          }
         }
         .MasterDoc, .BachelorDoc {
           text-align: left;
@@ -104,6 +116,12 @@
           }
         }
       }
+    }
+  }
+  .Experience{
+    border-bottom: 1px solid rgba(240, 238, 238, 0.89);
+    .EXPERINCEtext{
+      color: whitesmoke;
     }
   }
 }
