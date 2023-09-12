@@ -116,12 +116,12 @@ const BackGround = () => {
             </div>
             <div className={style.AppWorksSchool}>
               <div className={style.AppWorksSchoolPhoto}>
-                <Link href="https://www.ntnu.edu.tw/">
+                <Link href="https://school.appworks.tw/">
                   <Image
                     width={80}
                     height={80}
-                    src="/NTNU.png"
-                    alt='NTNU Logo'
+                    src="/AppWorksSchool.png"
+                    alt='AppWorks School Logo'
                   />
                 </Link>
               </div>

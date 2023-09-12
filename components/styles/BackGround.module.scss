@@ -99,7 +99,7 @@
         .MasterPhoto, .BachelorPhoto {
           width: 80px;
           height: 80px;
-          margin-right: 2vw;
+          margin-right: 2vw;margin-right: 2vw;
           @media (max-width: 650px) {
             padding-left: 20px;
           }
@@ -119,9 +119,26 @@
     }
   }
   .Experience{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:5vw 0;
     border-bottom: 1px solid rgba(240, 238, 238, 0.89);
     .EXPERINCEtext{
       color: whitesmoke;
     }
+    .AppWorksSchool{
+      display: flex;
+      .AppWorksSchoolPhoto{
+        border-radius: 50%;
+        margin-right: 2vw;
+      }
+      .AppWorksSchoolDoc{
+        text-align: left;
+        color: whitesmoke;
+      }
+    }
   }
 }
+
+//border-radius: 50%;
