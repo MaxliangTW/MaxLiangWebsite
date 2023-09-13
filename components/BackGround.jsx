@@ -110,26 +110,28 @@ const BackGround = () => {
             </div>
           </div>
         </section>
-        <section className={style.Experience}>
+        <section className={style.EXPERINCE}>
             <div className={style.EXPERINCEtext}>
               <h1>EXPERINCE</h1>
             </div>
-            <div className={style.AppWorksSchool}>
-              <div className={style.AppWorksSchoolPhoto}>
-                <Link href="https://school.appworks.tw/">
-                  <Image
-                    width={80}
-                    height={80}
-                    src="/AppWorksSchool.png"
-                    alt='AppWorks School Logo'
-                  />
-                </Link>
-              </div>
-              <div className={style.AppWorksSchoolDoc}>
-                <h2>Frontend Trianee</h2>
-                <p>2023.06 ~ 2023.08</p>
-                <b>Next.js, React.js, SCSS, Git</b>
-                <p>Campus Program Summer / Front-End Class</p>
+            <div className={style.Experience}>
+              <div className={style.AppWorksSchool}>
+                <div className={style.AppWorksSchoolPhoto}>
+                  <Link href="https://school.appworks.tw/">
+                    <Image
+                      width={80}
+                      height={80}
+                      src="/AppWorksSchool.png"
+                      alt='AppWorks School Logo'
+                    />
+                  </Link>
+                </div>
+                <div className={style.AppWorksSchoolDoc}>
+                  <h2>Frontend Trianee</h2>
+                  <p>2023.06 ~ 2023.08</p>
+                  <b>Next.js, React.js, SCSS, Git</b>
+                  <p>Campus Program Summer / Front-End Class</p>
+                </div>
               </div>
             </div>
         </section>
