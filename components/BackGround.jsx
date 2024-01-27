@@ -12,10 +12,10 @@ const BackGround = () => {
       <article className={style.BackGroundImg}>
         <section class={style.wrapper}>
           <h2>Hi, I&apos;m Max Liang </h2>
-          <h3>A Junior Front-end developer from Taiwan</h3>
+          <h3>A Junior Product Manager from Taiwan</h3>
           <p>I embrace a passion for making a world-changing impact.</p>
           <p>In pursuit of this goal,</p>
-          <p>I am honing my skills in areas such as Front-end development, UIUX, Product Management and more</p>
+          <p>I am honing my skills such as Front-end development, UIUX, Product Management and more</p>
           <div className={style.OtherLink}>
           <Link href="https://www.linkedin.com/in/shengchiehliang">
               <Image
@@ -51,15 +51,15 @@ const BackGround = () => {
         <div className={style.AboutMeText}>
           <h2>About Me</h2>
           <p>
-            我是一位台師大圖資所的碩士生，將於 2023 年底畢業，
-            目標成為一位前端工程師，目前主要使用 Next.js, React.js, SCSS進行開發，
-            過去也有 UX Reseacher, SEO 等相關實習經驗，
+            我是一位來自台灣的產品經理，
+            目前主要使用 Next.js, React.js, SCSS 進行開發工作，
+            過去有 UX Reseacher, Front-end, SEO 等相關實習經驗，
             期許自己能為開發與產品團隊帶來更多想法
           </p>
           <div className={style.AboutOther}>
             <ul className={style.AboutOtherLeft}>
               <li>Study:National Taiwan Normal University</li>
-              <li>Age:24</li>
+              <li>Age:25</li>
             </ul>
             <ul>
               <li>Location:Taipei, Taiwan</li>
@@ -110,7 +110,7 @@ const BackGround = () => {
             </div>
           </div>
         </section>
-        <section className={style.EXPERINCE}>
+        {/* <section className={style.EXPERINCE}>
             <div className={style.EXPERINCEtext}>
               <h1>EXPERINCE</h1>
             </div>
@@ -134,7 +134,7 @@ const BackGround = () => {
                 </div>
               </div>
             </div>
-        </section>
+        </section> */}
       </article>
     </div>
   )
